@@ -271,3 +271,50 @@ nav ul li a:hover {
 .wrapper_faq {
   margin: 0.5em;
 }
+
+@media screen and (max-width: 1024px), screen and (max-device-width: 1024px) {
+  html, body {
+    overflow-x: hidden;
+  }
+  nav {
+    left: -150px;
+    transition: left 300ms ease-in-out;
+  }
+
+  nav ul li {
+    width: 100%
+  }
+
+  .nav-trigger {
+    z-index: 2000;
+  }
+
+  body > label::after {
+    position: fixed;
+    left: 0;
+    padding: 0.3em 0.5em;
+    font-size: 1.8em;
+    content: "\2261";
+    cursor: pointer;
+    z-index: 2000;
+  }
+
+  input:checked ~ nav {
+    left: 0;
+  }
+
+  input:checked ~ .content {
+    margin-left: 150px;
+    margin-right: -150px;
+  }
+
+  .logo-img {
+    display: none;
+  }
+
+  .content {
+    margin-left: 0;
+    transition: margin 300ms ease-in-out;
+  }
+
+}

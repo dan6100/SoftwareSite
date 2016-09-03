@@ -3,10 +3,12 @@ $(function() {
 
 	loadPage = function(href) {
 		$main.load(href);
+		window.scrollTo(0, 0);
+		$('#nav-trigger').prop('checked', false);
 	};
 
 	init = function() {
-		loadPage("Home.html")
+		loadPage("Home.html");
 	};
 	init();
 
