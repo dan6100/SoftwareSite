@@ -44,6 +44,7 @@ nav {
   background-color: #28B5AB;
   font-weight: bold;
   text-transform: uppercase;
+  text-align: right;
   position: fixed;
   left: 0;
   height: 100%;
@@ -81,11 +82,11 @@ nav ul li a:hover {
   padding: 12px;
 }
 
-.active{
+nav .active {
   background-color: #FFB438;
 }
 
-.content {
+.page {
   position: relative;
   margin-left: 150px;
   height: auto;
@@ -303,7 +304,7 @@ nav ul li a:hover {
     left: 0;
   }
 
-  input:checked ~ .content {
+  input:checked ~ .page {
     margin-left: 150px;
     margin-right: -150px;
   }
@@ -312,7 +313,7 @@ nav ul li a:hover {
     display: none;
   }
 
-  .content {
+  .page {
     margin-left: 0;
     transition: margin 300ms ease-in-out;
   }
