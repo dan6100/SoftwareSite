@@ -42,6 +42,11 @@ footer a {
 nav {
   box-shadow: -0.2em 0 0.5em 0.2em #222;
   background-color: #28B5AB;
+  background: #28B5AB; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, #2B9FB5, #28B5AB); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, #2B9FB5, #28B5AB); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #2B9FB5, #28B5AB); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #2B9FB5, #28B5AB); /* Standard syntax */
   font-weight: bold;
   text-transform: uppercase;
   text-align: right;
@@ -96,10 +101,7 @@ nav .active {
   color: #FF491A;
 }
 
-#main {
-  padding: 1em 3em;
-  text-align: center;
-}
+
 
 /*******************************/
 /* Home page */
@@ -114,6 +116,14 @@ nav .active {
   display: inline-block;
   max-width: 40%;
   padding: 3em;
+}
+
+.content-padding {
+  padding: 1em 3em;
+}
+
+.center {
+  text-align: center;
 }
 
 .left {
@@ -141,6 +151,25 @@ nav .active {
 
 .home-dld:hover {
   background: #FF9168;
+}
+
+/*******************************/
+/* What is it page */
+.personalize li {
+  list-style: none;
+  display: inline-block;
+  margin: 2em 2%;
+  padding: 2em 0;
+  width: 8em;
+  
+}
+
+.personalize img {
+  display: block;
+  margin: 0 auto;
+  opacity: 0.7;
+  height: 3em;
+  width: 3em;
 }
 
 /*******************************/
