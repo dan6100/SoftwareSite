@@ -7,6 +7,11 @@ html {
 
 a {
   text-decoration: none;
+  color: #008279;
+}
+
+a:hover {
+  color: #D45C00;
 }
 
 body {
@@ -22,7 +27,7 @@ header {
 h3 {
   font-family: 'Raleway';
   font-weight: 100;
-  font-size: 1.7em;
+  font-size: 1.5em;
 }
 
 footer {
@@ -67,13 +72,14 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #FFF;
+  color: #EEE;
   display: block;
   padding: 1em;
   transition: background-color 200ms linear;
 }
 
 nav ul li a:hover {
+  color: #EEE;
   background-color: #FFBD6E;
 }
 
@@ -163,7 +169,7 @@ nav .active {
 }
 
 .home-dld:hover {
-  background: #FF9168;
+  background: #FFB438;
 }
 
 /*******************************/
@@ -179,9 +185,13 @@ nav .active {
 .personalize img {
   display: block;
   margin: 0 auto;
-  opacity: 0.7;
+  opacity: 0.6;
   height: 3em;
   width: 3em;
+}
+
+.personalize li a:hover > img {
+  opacity: 0.8;
 }
 
 .btn-section {
@@ -202,7 +212,7 @@ nav .active {
   padding: 1em;
 }
 
-.info-box-list a {
+.btn-section a {
   display: inline-block;
   background: #28B5AB;
   border: 1px solid #2B9FB5;
@@ -214,7 +224,7 @@ nav .active {
   transition: background 200ms ease-in-out;
 }
 
-.info-box-list a:hover {
+.btn-section a:hover {
   background: #FFB438;
 }
 
